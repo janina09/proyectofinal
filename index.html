@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./img/LOGO.png">
+  <title>Homemade By JANI</title>
+</head>
+
+<body class="contenedor">
+
+  <div class="head">
+    <div class="logo">
+      <img src="./img/LOGO.png" height="50px" width="50px" alt="">
+      <a href="./index.html"></a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+        <li><a href="./pages/productos.html">Productos</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
+        <li><a href="#" id="agregar-carrito">Agregar al carrito</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header>
+    <section class="header">
+
+      <h2 class="title">Nosotros</h2>
+      <p class="content">Nuestra historia comienza como un cálido y amoroso emprendimiento familiar dedicado a la
+        costura
+        personalizada. Cada uno de nuestros productos es creado con un inmenso amor y atención a los detalles,
+        buscando brindar a nuestros clientes una experiencia única y especial.</p>
+
+    </section>
+
+
+  </header>
+
+  <main>
+    <section class="product">
+      <h2 class="title">Productos</h2>
+      <div class="gallery">
+        
+        <div class="image">
+          <img src="./img/bolsoPicnic/DSC_0871.JPG" height="150px" alt="Imagen 1">
+          <button class="btn">Seleccionar</button>
+        </div>
+        <div class="image">
+          <img src="./img/bolsoPicnic/DSC_0878.JPG" height="150px" alt="Imagen 2">
+          <button class="btn">Seleccionar</button>
+        </div>
+        <div class="image">
+          <img src="./img/bolsoPicnic/DSC_0885.JPG" height="150px" alt="Imagen 1">
+          <button class="btn">Seleccionar</button>
+        </div>
+        <div class="image">
+          <img src="./img/cartuBox/IMG_20220908_191346842~2.jpg" height="150px" alt="Imagen 2">
+          <button class="btn">Seleccionar</button>
+        </div><div class="image">
+          <img src="./img/cartuBox/IMG_20220908_191813361~2.jpg" height="150px" alt="Imagen 1">
+          <button class="btn">Seleccionar</button>
+        </div>
+        <div class="image">
+          <img src="./img/cartuBox/IMG_20221206_133050199~2.jpg" height="150px" alt="Imagen 2">
+          <button class="btn">Seleccionar</button>
+        </div>
+
+    </section>
+    <section>
+      <h3>Video</h3>
+      <video src="./media/VID_20220908_191154838.mp4" height="400px" controls muted></video>
+    </section>
+    <section class="contact">
+      <h2 class="title">Contacto</h2>
+
+      <p>Si deseas algun producto personalizado o tienes preguntas, cometarios o sugerencias sobre nuestros productos, por favor no dudes en contactarte con nosotros en el formulario a continuacion</p>
+
+      <form action="procesar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+      <br><br>
+</body>
+
+</html>
+
+</section>
+
+
+</main>
+
+<footer class="footer-container">
+  <img class="logo-2" src="./img/LOGO.png" width="50px" alt="">
+  <i class="icon-instagram">
+    @homemadeByJani
+  </i>
+  <p>Hecho en casa con mucho Amor</p>
+</footer>
+
+<script src="./scripts/index.js"></script>
+</body>
+
+</html>

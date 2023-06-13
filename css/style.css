@@ -1,0 +1,142 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Poltawski+Nowy:ital@0;1&family=Poppins:ital,wght@0,400;0,500;0,700;1,600;1,800&display=swap');
+</style>
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #ccc9c9;
+}
+
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+  background-color: rgb(11, 12, 10);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+ 
+}
+
+.navbar {
+  display: flex;
+  margin-right: 10px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: blanchedalmond;
+  font-size: 20px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  height: 60vh !important;
+  background: url(/img/maquina.jpg) no-repeat center;
+  background-size: cover;
+}
+.title {
+  margin-bottom: 40 px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.header p{
+  color: rgb(15, 15, 15);
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 18px;
+
+}
+
+.navbar ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul a {
+  color: white;
+  text-decoration: none;
+  padding: 20px ;
+  display: block;
+}
+
+.navbar li a:hover {
+  background-color: #888888;
+  color: black;
+  font-weight: bold;
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image{
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.btn{
+  display: flex;
+  margin-top: 50px;
+}
+
+.product {
+  margin: 10px;
+
+}
+.footer-container{
+  background-color: #837a7a;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  grid-area: footer;
+  text-align: center;
+}
+
+
+.contact{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #ccc9c9;
+}
+
+@media screen and (max-width:700px) {
+  .contenedor {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 2fr auto auto;
+      grid-template-areas:
+          "header"
+          "main"
+          "footer";
+  }
+
+}
